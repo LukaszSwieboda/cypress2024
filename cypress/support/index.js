@@ -1,4 +1,6 @@
 import "./commands";
+import "cypress-shadow-dom";
+
 
 // Ustawienia globalne
 Cypress.config('defaultCommandTimeout', 10000)

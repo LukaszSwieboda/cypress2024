@@ -25,6 +25,9 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 // cypress/support/commands.js
+import "cypress-xpath";
+
+
 Cypress.Commands.add('login', (username, password) => {
   cy.get('input[name="username"]').type(username)
   cy.get('input[name="password"]').type(password)
