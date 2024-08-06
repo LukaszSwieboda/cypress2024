@@ -5,6 +5,8 @@
     "cypress-xpath": "^2.0.1"
   },
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "test:staging": "cypress run --config baseUrl=https://staging.example.com --env username=staging-user,password=staging-password,apiUrl=https://staging-api.example.com",
+    "test:production": "cypress run --config baseUrl=https://www.example.com --env username=prod-user,password=prod-password,apiUrl=https://api.example.com"
   }
 }

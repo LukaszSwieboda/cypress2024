@@ -1,0 +1,42 @@
+# Ignorowanie plików konfiguracyjnych specyficznych dla edytorów kodu
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignorowanie plików i folderów systemowych
+.DS_Store
+Thumbs.db
+
+# Ignorowanie plików Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Ignorowanie plików Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Ignorowanie plików środowiskowych
+cypress.env.json
+
+# Ignorowanie plików buildów i dystrybucji
+dist/
+build/
+
+# Ignorowanie plików logów
+logs/
+*.log
+
+# Ignorowanie innych plików tymczasowych
+temp/
+*.tmp
+
+# Ignorowanie plików lokalnych konfiguracyjnych
+.env
+*.local
+
+# Ignorowanie plików specyficznych dla systemu operacyjnego
+*.swp
+*~
