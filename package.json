@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "cypress": "^13.13.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-shadow-dom": "^1.4.1",
     "cypress-xpath": "^2.0.1"
   },
@@ -8,5 +9,9 @@
     "cypress:open": "cypress open",
     "test:staging": "cypress run --config baseUrl=https://staging.example.com --env username=staging-user,password=staging-password,apiUrl=https://staging-api.example.com",
     "test:production": "cypress run --config baseUrl=https://www.example.com --env username=prod-user,password=prod-password,apiUrl=https://api.example.com"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinations": true,
+    "stepDefinitions": "cypress/e2e/PageObjects/"
   }
 }
